@@ -1,3 +1,6 @@
+import taxes.Person;
+import taxes.taxCalc;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -13,5 +16,12 @@ public class Main {
             // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
         }
+
+        Person Jim = new Person("Jim Smyth", 10000);
+        Person Keeley = new Person("Keeley", 45000);
+        taxCalc tax = new taxCalc();
+
+        System.out.println(tax.calcTax(Jim));
+        System.out.println(tax.calcTax(Keeley));
     }
 }
