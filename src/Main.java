@@ -1,4 +1,5 @@
 import UniqueSum.UniqueSum;
+import blackjack.BlackJack;
 import taxes.Person;
 import taxes.taxCalc;
 
@@ -10,13 +11,6 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
 
         Person Jim = new Person("Jim Smyth", 10000);
         Person Keeley = new Person("Keeley", 45000);
@@ -28,5 +22,11 @@ public class Main {
         UniqueSum adder = new UniqueSum();
 
         System.out.println(adder.stringOutput(new Integer[]{2,34,1,98,98,98}));
+
+
+
+        BlackJack blackJack = new BlackJack();
+        blackJack.startGame(3);
+
     }
 }

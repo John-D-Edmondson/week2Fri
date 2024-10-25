@@ -31,8 +31,6 @@ public class UniqueSum {
             valsInInputs.append(",");
         }
 
-
-
         return String.format("The sum of the uniques in: %s \n The unique sum is %d" ,valsInInputs, sum);
     }
 }
