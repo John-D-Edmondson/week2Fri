@@ -5,8 +5,9 @@ import java.util.List;
 
 public class taxCalc {
 
-    private Integer[] taxBands = new Integer[]{14999, 19999, 29999, 39999};
+    private Integer[] taxBands = new Integer[]{14999, 19999, 29999, 44999};
     private Integer[] taxRates = new Integer[]{0,10,15,20,25};
+
 
     public taxCalc(){
 
@@ -34,6 +35,8 @@ public class taxCalc {
 
     public String calcTax (Person person){
         calcTaxRate(person);
+
+
 
         double taxPaid =  ((double) person.getWage() * ((double) person.getTaxRate() /100));
         double takeHome = person.getWage() - taxPaid;

@@ -1,3 +1,4 @@
+import UniqueSum.UniqueSum;
 import taxes.Person;
 import taxes.taxCalc;
 
@@ -23,5 +24,9 @@ public class Main {
 
         System.out.println(tax.calcTax(Jim));
         System.out.println(tax.calcTax(Keeley));
+
+        UniqueSum adder = new UniqueSum();
+
+        System.out.println(adder.stringOutput(new Integer[]{2,34,1,98,98,98}));
     }
 }
