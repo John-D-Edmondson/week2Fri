@@ -11,7 +11,7 @@ public class ElectronicDevice {
 
     private boolean screen;
     public void turnOn(){
-        System.out.println("Turning on.....");
+        System.out.println("Turning on..... generic");
     }
 
     public ElectronicDevice(){}
