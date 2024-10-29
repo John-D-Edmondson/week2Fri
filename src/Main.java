@@ -27,6 +27,7 @@ public class Main {
 
         Customers customers = new Customers();
         customers.create_customer("John", "Doe", "jd@gmail.com");
+        customers.create_customer("jim", "bob", "jimb@aol.com");
         System.out.println(customers.displayAllCustomer());
 
         System.out.println("==============");
@@ -41,18 +42,27 @@ public class Main {
         ProductHandler.run(products);
 
 
-    /*
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What are you looking to interact with today? \n");
-        System.out.println(" 1. customer \n 2. order \n 3.product");
-        int input = scanner.nextInt();
+        while(true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("What are you looking to interact with today? \n");
+            System.out.println(" 1. customer \n 2. order \n 3.product");
+            int input = scanner.nextInt();
+            scanner.nextLine();
 
-        while (input >3 || input < 0){
-            System.out.println("invalid input");
-            input = scanner.nextInt();
-        };
+            while (input > 3 || input < 0) {
+                System.out.println("invalid input");
+                input = scanner.nextInt();
+                scanner.nextLine();
+            }
+            ;
 
-     */
+            if (input == 1) {
+                CustomerHandler customerHandler = new CustomerHandler(customers);
+                customerHandler.customerHandlerStart();
+            }
+
+        }
+
 
 
 
