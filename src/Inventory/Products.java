@@ -44,8 +44,8 @@ public class Products {
     };
     public String deleteProduct(int id){
         Product deletedProd = products.remove(id);
-        if (deletedProd == null) return "customer not found";
-        return "customer deleted";
+        if (deletedProd == null) return "product not found";
+        return "product deleted";
     };
     public String deleteProduct(String name){
         for (Map.Entry<Integer, Product> entry : products.entrySet()) {
