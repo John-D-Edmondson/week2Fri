@@ -39,6 +39,7 @@ public class Main {
         System.out.println(customers.displayAllCustomer());
 
         ProductHandler.run(products);
+        OrderHandler.run(orders);
 
 
     /*
