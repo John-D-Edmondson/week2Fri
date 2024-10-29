@@ -27,15 +27,11 @@ public class Products {
         }
         return "product not found";
     };
-    public void displayProducts(){
-        for (Map.Entry<Integer, Product> entry : products.entrySet()) {
-            Product product = entry.getValue();
-            System.out.println(product.toString());
+    public String displayProducts(){
+        if (!products.isEmpty()) {
+            return products.toString();
         }
-
-        if (products.isEmpty()) {
-            System.out.println("no products found ");
-        }
+        return "products list is empty";
     };
     public String updateProduct(int id, String name, double cost){
         Product foundProd = products.get(id);
@@ -61,5 +57,6 @@ public class Products {
         }
         return "product not found";
     };
+
 
 }

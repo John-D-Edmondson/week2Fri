@@ -54,11 +54,9 @@ public class Customers {
         return "Customer not found";
     }
 
-    public void displayAllCustomer(){
-        for (Map.Entry<Integer, Customer> entry : customers.entrySet()) {
-            Customer customer = entry.getValue();
-            System.out.println(customer.toString());
-        }
+    public String displayAllCustomer(){
+        if(!customers.isEmpty()){return customers.toString();}
+        return "customers list empty";
     }
 
 
