@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Orders {
     private HashMap<Integer, Order> orders = new HashMap<Integer, Order>();
-    private static int orderIdCount = 1;
+    public static int orderIdCount = 1;
 
 
     // No args constructor

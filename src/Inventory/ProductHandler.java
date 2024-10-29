@@ -75,15 +75,4 @@ public class ProductHandler {
     private static void displayAllProducts(Scanner scanner, Products productsList) {
         System.out.println(productsList.displayProducts());
     }
-
-
-
-
-
-    // String input
-    //String name = myObj.nextLine();
-
-    // Numerical input
-    //int age = myObj.nextInt();
-    //double salary = myObj.nextDouble();
 }
