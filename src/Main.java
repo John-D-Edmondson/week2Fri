@@ -59,7 +59,8 @@ public class Main {
                 CustomerHandler customerHandler = new CustomerHandler(customers);
                 customerHandler.customerHandlerStart();
             } else if( input == 2){
-
+                OrderHandler orderHandler = new OrderHandler();
+                orderHandler.run(orders);
             } else if(input ==3 ){
                 ProductHandler productHandler = new ProductHandler();
                 productHandler.run(products);
