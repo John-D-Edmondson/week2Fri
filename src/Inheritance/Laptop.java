@@ -21,10 +21,11 @@ public class Laptop extends ElectronicDevice {
         this.RAM = RAM;
     }
 
-    public Laptop(){}
+    public Laptop(){
+    }
 
     public Laptop(Boolean screen, String brand, int RAM) {
-        super(screen);
+        this.setScreen(screen);
         this.brand = brand;
         this.RAM = RAM;
     }

@@ -20,27 +20,28 @@ public class Main {
 //        Human jeff = new Human();
 //        System.out.println(jacob.getAgeLocal());
 //        System.out.println(john.getAgeLocal());
-        ElectronicDevice[] electronicDevices = new ElectronicDevice[6];
-        ElectronicDevice laptop1 = new Laptop(true, "Dell", 8);
-        ElectronicDevice laptop2 = new Laptop(true, "HP", 16);
-        ElectronicDevice generic1 = new ElectronicDevice();
-        ElectronicDevice generic2 = new ElectronicDevice(true);
-        ElectronicDevice radio1 = new Radio();
-        ElectronicDevice radio2 = new Radio(false, "Phillips", new Double[]{99.8, 102.2});
-
-
-        electronicDevices[0] = laptop1;
-        electronicDevices[1] = laptop2;
-        electronicDevices[2] = generic1;
-        electronicDevices[3] = generic2;
-        electronicDevices[4] = radio1;
-        electronicDevices[5] = radio2;
-
-
-
-        for(ElectronicDevice device : electronicDevices) {
-            device.turnOn();
-        }
+//        ElectronicDevice[] electronicDevices = new ElectronicDevice[4];
+//        ElectronicDevice laptop1 = new Laptop(true, "Dell", 8);
+//        ElectronicDevice laptop2 = new Laptop(true, "HP", 16);
+//
+//        ElectronicDevice radio1 = new Radio();
+//        ElectronicDevice radio2 = new Radio(false, "Phillips", new Double[]{99.8, 102.2});
+//
+//
+//        electronicDevices[0] = laptop1;
+//        electronicDevices[1] = laptop2;
+//
+//        electronicDevices[2] = radio1;
+//        electronicDevices[3] = radio2;
+//
+//
+//
+//        for(ElectronicDevice device : electronicDevices) {
+//            device.turnOn();
+//        }
+//
+//        ElectronicDevice test1 = new ElectronicDevice(){};
+//
 
 
 }}

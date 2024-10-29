@@ -26,7 +26,7 @@ public class Radio extends ElectronicDevice {
     public Radio(){}
 
     public Radio(Boolean screen, String brand, Double[] channels) {
-        super(screen);
+        this.setScreen(screen);
         this.brand = brand;
         this.channels = channels;
     }

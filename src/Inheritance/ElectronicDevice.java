@@ -1,6 +1,7 @@
 package Inheritance;
 
-public class ElectronicDevice {
+public abstract class ElectronicDevice {
+//    public ElectronicDevice(){};
     public boolean isScreen() {
         return screen;
     }
@@ -10,19 +11,8 @@ public class ElectronicDevice {
     }
 
     private boolean screen;
-    public void turnOn(){
-        System.out.println("Turning on..... generic");
-    }
+    public void turnOn(){};
 
-    public ElectronicDevice(){}
-    public ElectronicDevice(Boolean screen){
-        this.screen = screen;
-    }
 
-    @Override
-    public String toString() {
-        return "ElectronicDevice{" +
-                "screen=" + screen +
-                '}';
-    }
+
 }
