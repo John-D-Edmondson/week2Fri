@@ -3,6 +3,7 @@ import Inheritance.Laptop;
 import Inheritance.Radio;
 import Inventory.Customer;
 import Inventory.Customers;
+import Inventory.Products;
 import UniqueSum.UniqueSum;
 import blackjack.BlackJack;
 import taxes.Person;
@@ -15,20 +16,10 @@ import java.time.LocalDate;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Customers customers = new Customers();
-
-        customers.create_customer("jim", "smith", "jimsmith@gmail.com");
-        customers.create_customer("heater", "wheatley", "heatherwheatley@gmail.com");
 
 
 
 
-        customers.displayAllCustomer();
-
-        System.out.println(customers.deleteCustomer("jimsmith@gmail.com"));
-        System.out.println(customers.deleteCustomer("jimsmith@gmail"));
-
-        customers.displayAllCustomer();
 
 
 }}
