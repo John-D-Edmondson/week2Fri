@@ -20,6 +20,15 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
+        Products products = new Products();
+        products.createProduct("Merlot", 8.99);
+        products.createProduct("Shiraz", 11.99);
+        products.displayProducts();
+        System.out.println("==============");
+        Orders orders = new Orders();
+        orders.createOrder(1, new ArrayList<>(Arrays.asList(1, 2)));
+        System.out.println(orders.readAllOrders());
+
 //        // Press Alt+Enter with your caret at the highlighted text to see how
 //        // IntelliJ IDEA suggests fixing it.
 //        Human john = new Human("brown", 10);

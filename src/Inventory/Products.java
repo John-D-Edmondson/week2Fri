@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Products {
-    private HashMap<Integer, Product> products = new HashMap<Integer, Product>();
+    public static HashMap<Integer, Product> products = new HashMap<Integer, Product>();
 
     public Products(){};
 

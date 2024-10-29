@@ -9,7 +9,7 @@ public class Order {
     private int orderId;
     private int customerId;
     private ArrayList<Integer> productIds;
-    private float totalCost;
+    private double totalCost;
 
     // Most args constructor (No total cost arg)
     public Order(int orderId, int customerId, ArrayList<Integer> productIds) {
@@ -50,13 +50,17 @@ public class Order {
         productIds.removeAll(List.of(productId));
     }
 
-    public float getTotalCost() {
+    public double getTotalCost() {
         return totalCost;
     }
 
     // Calculate the total order cost
-    private float calculateTotalCost(ArrayList<Integer> productIds) {
-        return (float) 1.0F;
+    private double calculateTotalCost(ArrayList<Integer> productIds) {
+        double totalCost = 0;
+        for (Integer productId:productIds) {
+            totalCost += Products.products.get(productId).getCost();
+        }
+        return totalCost;
     }
 
     @Override
