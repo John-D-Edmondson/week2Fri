@@ -1,6 +1,8 @@
 package Inventory;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Order {
 
@@ -45,7 +47,7 @@ public class Order {
     }
 
     public void removeProductId(int productId) {
-        productIds.remove(productId);
+        productIds.removeAll(List.of(productId));
     }
 
     public float getTotalCost() {
