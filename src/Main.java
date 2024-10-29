@@ -40,7 +40,6 @@ public class Main {
         System.out.println(customers.displayAllCustomer());
 
 
-
         boolean carryOn = true;
         while(carryOn) {
             Scanner scanner = new Scanner(System.in);
