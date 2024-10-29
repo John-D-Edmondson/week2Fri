@@ -1,10 +1,7 @@
 import Inheritance.ElectronicDevice;
 import Inheritance.Laptop;
 import Inheritance.Radio;
-import Inventory.Customer;
-import Inventory.Customers;
-import Inventory.Products;
-import Inventory.Orders;
+import Inventory.*;
 import UniqueSum.UniqueSum;
 import blackjack.BlackJack;
 import taxes.Person;
@@ -40,6 +37,8 @@ public class Main {
 
         System.out.println("==============");
         System.out.println(customers.displayAllCustomer());
+
+        ProductHandler.run(products);
 
 
     /*

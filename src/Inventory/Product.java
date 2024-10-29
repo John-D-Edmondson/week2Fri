@@ -1,7 +1,7 @@
 package Inventory;
 
 public class Product {
-    private static int idCounterProd = 1;
+    public static int idCounterProd = 1;
     private int productId;
     private String productName;
     private double cost;
