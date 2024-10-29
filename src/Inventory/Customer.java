@@ -55,6 +55,10 @@ public class Customer {
         this.email = email;
     }
 
+    public void addOrderId(int orderId) {
+        orderIds.add(orderId);
+    }
+
     @Override
     public String toString() {
         return "Customer{" +

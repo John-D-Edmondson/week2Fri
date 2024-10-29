@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Customers {
-    private HashMap<Integer, Customer> customers = new HashMap<Integer, Customer>();
+    public static HashMap<Integer, Customer> customers = new HashMap<Integer, Customer>();
     public Customers(){};
     public void create_customer(String firstname, String lastname, String email){
         Customer newCust = new Customer(firstname, lastname, email);

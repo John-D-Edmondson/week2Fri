@@ -21,6 +21,7 @@ public class Orders {
     public void createOrder(int customerId, ArrayList<Integer> productIds) {
         Order order = new Order(orderIdCount, customerId, productIds);
         orders.put(order.getOrderId(), order);
+        Customers.customers.get(customerId).addOrderId(order.getOrderId());
         orderIdCount++;
     }
 

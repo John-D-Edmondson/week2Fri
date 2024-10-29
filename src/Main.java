@@ -24,12 +24,25 @@ public class Main {
         Products products = new Products();
         products.createProduct("Merlot", 8.99);
         products.createProduct("Shiraz", 11.99);
-        products.displayProducts();
+        System.out.println(products.displayProducts());
+
         System.out.println("==============");
+
+        Customers customers = new Customers();
+        customers.create_customer("John", "Doe", "jd@gmail.com");
+        System.out.println(customers.displayAllCustomer());
+
+        System.out.println("==============");
+
         Orders orders = new Orders();
         orders.createOrder(1, new ArrayList<>(Arrays.asList(1, 2)));
         System.out.println(orders.readAllOrders());
 
+        System.out.println("==============");
+        System.out.println(customers.displayAllCustomer());
+
+
+    /*
         Scanner scanner = new Scanner(System.in);
         System.out.println("What are you looking to interact with today? \n");
         System.out.println(" 1. customer \n 2. order \n 3.product");
@@ -39,6 +52,8 @@ public class Main {
             System.out.println("invalid input");
             input = scanner.nextInt();
         };
+
+     */
 
 
 
