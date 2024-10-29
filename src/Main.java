@@ -39,34 +39,36 @@ public class Main {
         System.out.println("==============");
         System.out.println(customers.displayAllCustomer());
 
-        ProductHandler.run(products);
 
 
-        while(true) {
+        boolean carryOn = true;
+        while(carryOn) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("What are you looking to interact with today? \n");
-            System.out.println(" 1. customer \n 2. order \n 3.product");
+            System.out.println(" 1. Customer \n 2. Order \n 3. Product \n 4. Exit");
             int input = scanner.nextInt();
             scanner.nextLine();
 
-            while (input > 3 || input < 0) {
+            while (input > 4 || input < 0) {
                 System.out.println("invalid input");
                 input = scanner.nextInt();
                 scanner.nextLine();
             }
-            ;
+
 
             if (input == 1) {
                 CustomerHandler customerHandler = new CustomerHandler(customers);
                 customerHandler.customerHandlerStart();
+            } else if( input == 2){
+
+            } else if(input ==3 ){
+                ProductHandler productHandler = new ProductHandler();
+                productHandler.run(products);
+            } else if (input == 4){
+                carryOn = false;
             }
-
+            else {
+                System.out.println("Invalid input");
+            }
         }
-
-
-
-
-
-
-
 }}

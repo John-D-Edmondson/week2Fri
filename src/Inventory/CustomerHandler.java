@@ -7,7 +7,7 @@ public class CustomerHandler {
     private Customers customers;
     public CustomerHandler(Customers customers){
         this.customers = customers;
-    };
+    }
     Scanner scan = new Scanner(System.in);
     public void customerHandlerStart(){
         System.out.println("You are in the customer menu \n");
@@ -46,6 +46,7 @@ public class CustomerHandler {
     private void deleteCustomerHandler() {
         System.out.println("Delete by 1. id or 2. email");
         int input = scan.nextInt();
+        scan.nextLine();
         if (input ==1) {
             System.out.println("Input id \n");
             int idInput = scan.nextInt();
